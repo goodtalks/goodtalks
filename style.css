@@ -110,23 +110,43 @@ main {
   z-index: 1;
 }
 
-.letter span {
-  display: block;
-}
 
-.tab-container {
-  padding: 5px 20px 0;
-}
-
-.reasons {
-  padding-top: 4rem;
-  padding-bottom: 3rem;
-}
-.reasons img {
+.contact-info img {
   width: 100%;
 }
+
+#why {
+  -webkit-box-shadow: inset 0px 0px 33px -7px rgba(0,0,0,0.29);
+-moz-box-shadow: inset 0px 0px 33px -7px rgba(0,0,0,0.29);
+box-shadow: inset 0px 0px 33px -7px rgba(0,0,0,0.29);
+}
+.why-list {
+  margin-top: 27px;
+}
+.why-list > li{
+  list-style: initial;
+  margin: 9px 0px;
+}
+
+
+.contact-info {
+  padding: 34px 0;
+  margin-top: 27px;
+}
+.contact-info li {
+  margin: 23px;
+}
+
 footer.page-footer {
   margin-top: 0;
   z-index: 1000;
+}
+
+footer .links a{
+  opacity: 0.7;
+}
+
+footer .links a:hover {
+  opacity: 1;
 }
 
