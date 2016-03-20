@@ -1,0 +1,132 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+.heading {
+  font-weight: 300;
+  color: #26a69a; /*----------color--------------*/
+}
+
+.tabs {
+  overflow-x: hidden;
+}
+.tabs .tab a {
+  color: #26a69a; /*----------color--------------*/
+}
+.tabs .tab a:hover {
+  color: #80cbc4; /*----------color--------------*/
+}
+.tabs .indicator {
+  background-color: #4db6ac;
+}
+
+header {
+}
+
+.section {
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+}
+
+.section-image {
+  padding: 0;
+}
+
+.parallax-container{
+  height: 600px;
+}
+.parallax {
+  z-index: -1;
+}
+
+.image-container {
+  height: 600px;
+}
+
+.header-image {
+  padding-top: 19%;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: url("https://i.ytimg.com/vi/aSt87wuAsm8/maxresdefault.jpg");
+  background-size: cover;
+}
+.header-image h1{
+  font-size: 84px;
+  letter-spacing: 1.8px;
+  margin-bottom: 1.3rem;
+  font-weight: 600;
+}
+.header-image i {
+  animation-name: bounce;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: bounce;
+  -webkit-animation-duration: 0.8s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: bounce;
+  -moz-animation-duration: 0.8s;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-name: bounce;
+  -o-animation-duration: 0.8s;
+  -o-animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    -moz-transform: scale(1,1);
+    -o-transform: scale(1,1);
+    -ms-transform: scale(1,1);
+  }
+  50% {
+    transform: scale(1.3,1.3);
+    -webkit-transform: scale(1.3,1.3);
+    -moz-transform: scale(1.3,1.3);
+    -o-transform: scale(1.3,1.3);
+    -ms-transform: scale(1.3,1.3);
+  }
+  100% {
+    transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    -moz-transform: scale(1,1);
+    -o-transform: scale(1,1);
+    -ms-transform: scale(1,1);
+  }
+}
+  
+main {
+  -webkit-flex: 1 0 auto;
+  -moz-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  -o-flex: 1 0 auto;
+  flex: 1 0 auto;
+
+  z-index: 1;
+}
+
+.letter span {
+  display: block;
+}
+
+.tab-container {
+  padding: 5px 20px 0;
+}
+
+.reasons {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+.reasons img {
+  width: 100%;
+}
+footer.page-footer {
+  margin-top: 0;
+  z-index: 1000;
+}
+
