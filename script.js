@@ -9,7 +9,6 @@
     fillHeaderImage(navbarHeight, $imageContainer);
     $(window).resize(fillHeaderImage(navbarHeight, $imageContainer));
 
-    $('.scrollspy').scrollSpy();
     $(".button-collapse").sideNav();
     $('.parallax').parallax();
   });
