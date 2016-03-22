@@ -1,14 +1,14 @@
  $(document).ready(function(){
-    var navbarHeight = 64;
-    var $imageContainer = $('.image-container');
-
-    function fillHeaderImage(nav, $img){
-      var imgHeight = $(window).height() - nav;
-      $img.css('height', imgHeight+'px');
-    }
-    fillHeaderImage(navbarHeight, $imageContainer);
-    $(window).resize(fillHeaderImage(navbarHeight, $imageContainer));
-
     $(".button-collapse").sideNav();
+
     $('.parallax').parallax();
+    $('.scrollspy').scrollSpy();
+
+     $(".nav-menu a").click(function (e){
+        e.preventDefault();
+        var link = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(link).offset().top - 180
+        }, 300);
+    });
   });

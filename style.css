@@ -33,7 +33,7 @@ header {
 }
 
 .image-container {
-  height: 600px;
+  height: 100vh;
 }
 
 .header-image {
