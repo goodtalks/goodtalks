@@ -9,17 +9,8 @@ body {
   color: #26a69a; /*----------color--------------*/
 }
 
-.tabs {
-  overflow-x: hidden;
-}
-.tabs .tab a {
-  color: #26a69a; /*----------color--------------*/
-}
-.tabs .tab a:hover {
-  color: #80cbc4; /*----------color--------------*/
-}
-.tabs .indicator {
-  background-color: #4db6ac;
+.nav-mobile {
+
 }
 
 header {
@@ -56,10 +47,20 @@ header {
   background-size: cover;
 }
 .header-image h1{
-  font-size: 84px;
+  font-size: 6rem;
   letter-spacing: 1.8px;
   margin-bottom: 1.3rem;
   font-weight: 600;
+}
+@media only screen and (max-width: 720px) {
+  .header-image h1 {
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .header-image h1 {
+    font-size: 4rem;
+  }
 }
 .header-image i {
   animation-name: bounce;
